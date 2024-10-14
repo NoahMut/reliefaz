@@ -1,164 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title>YSA</title>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>YSA</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <style>
-      nav{
-          position: relative;
-          left: -100px;
+    /* Base Styles */
+    .reach{
+    font-size: 300px;
+}
+    body {
+      margin: 0;
+      padding: 0;
+      background: white;
+      font-family: Arial, sans-serif;
+      font-family: 'Rajdhani', sans-serif;
+          font-size: 23px;        
+      font-weight: lighter;
+       color:grey;
+      
+    }
+  
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+      z-index: 9999;
+      border-bottom: 1px solid rgb(156, 156, 156);
+      padding: 10px 20px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+      .header .logo img {
+        height: 80px;
+        max-width: 150px;
+        object-fit: contain;
       }
-      .carousel-container {
-         width: 1301px;
-            overflow: hidden;
-            position: relative;
-            left: -347px;
-
-        }
-        .carousel-inner {
-          left: -335px;
-            display: flex;
-            overflow: hidden;
-            width: 100%;
-
-            animation: scroll 21s linear infinite;
-            width: calc(300px * 12); /* Adjust based on number of images and their duplication */
-            
-
-        }
-        .carousel-item {
-            height: 150PX;
-            width: 300px;
-            flex-shrink: 0;
-            overflow: hidden;
-
-        }
-        .carousel-item1 {
-            height: 150PX;
-            width: 300px;
-            flex-shrink: 0;
-            overflow: hidden;
-            position: relative;
-            top: -15px;
-
-
-        }
-        img {
-            width: 100%;
-            display: block;
-            
-        }
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%); /* Scrolls half the total width */
-            }
-        }
-.ren{
-    width: 1000px;
-}
-
-.container{
-  width: 1200px;
-  position: relative;
-  top: -650px;
-  left: -300px
-;
+  
     
-}
-.sub-title{
-    font-family: 'Rajdhani', sans-serif;
-    position: relative;
-    top: -140px;
+  
+      .header li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+      }
+    .header {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        background: rgb(0, 0, 0);
+        z-index: 9999;
+        border-bottom: 1px solid green;
+        border-color: rgb(156, 156, 156);
+      
+    }
+    .header ul {
+        position: relative;
+        top: 7px;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        float: right;
+    }
 
-}
-.sub-title1{
-    font-family: 'Rajdhani', sans-serif;
-    position: absolute;
-    top: 885px;
-    left: -280px;
-}
-/* ----------------services------------- */
-#services{
-    padding: 30px 0;
-}
-.services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-    position: relative;
-    top: -135px;
-}
-.services-list div{
-    background: #262626;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
+    .header li {
+        margin-right: 80px;
+       font-family: Arial, sans-serif;
+      font-size:16px;
+    }
 
-}
-.domain{
-    color: #fff;
-}
-.services-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.services-list div h2{
-    margin-top: 10px;
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-h2{
-color: white;
-font-family: 'Rajdhani', sans-serif;
-font-weight: 900;
-}
-
-.services-list div a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-}
-.services-list div:hover{
-    background: rgb(63, 65, 63);
-    transform: translateY(-10px);
-}
-
-        body {
-            margin: 0;
-            padding: 0;
-            background: white;
-        }
-        .login-button{
-            transition: background-color 0.3s ease;
-            color: rgb(255, 255, 255);
-    font-family: Arial, sans-serif; 
-    position: relative;
-    top: -15px;
-
-        }
-         .signup-button {
+    .menu-toggle {
+        display: none;
+        font-size: 24px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+    .signup-button {
             position: relative;
             background-color: rgb(34, 155, 45);
             padding: 10px 20px;
@@ -166,636 +108,479 @@ font-weight: 900;
             transition: background-color 0.3s ease;
             color: white;
             font-family: 'Quicksand', sans-serif;
-            top: -15px;
 
                }
-
-        .signup-button:hover {
+               .signup-button:hover {
             background-color:rgb(109, 233, 130);
             color: black;
 
         }
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100px;
-            justify-content: center;
-            color: rgb(255, 255, 255);
-            background: rgb(0, 0, 0);
-            z-index: 9999;
-            border-bottom: 1px solid green;
-            border-color: rgb(156, 156, 156);
-        }
-        .header ul {
-            position: relative;
-            top: 7px;
-            list-style: none;
-            display: flex;
-            align-items: center;
-            float: right;
-        }
-
-        .header li {
-            margin-right: 80px;
-        }
-        .feature-img {
-            position: relative;
-            width: 100%;
-            height: auto;
-            overflow: hidden;
-            top: -70px;
-        }
-
-        .feature-img .large {
-            position: relative;
-            top: 30px;
-            width: 100%;
-            display: block;
-            vertical-align: middle;
-            height: auto;
-        }
-.gas{
-    position: absolute;
-            top: -240px;
-            left: -1%;
-            right: 50%;
-            width: 1000px;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 70px;
-            letter-spacing: -2px;
-            line-height: 90px;
-            word-spacing: 2px;
-}
-        .feature-img .overlay {
-            position: absolute;
-            top: -112px;
-            left: 3%;
-            right: 50%;
-            width: 650px;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #ffffff;
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 52px;
-            letter-spacing: -2px;
-            line-height: 67px;
-            word-spacing: 2px;
-        }
-
-        .whatis {
-            position: relative;
-            top: 230px;
-            left: -60px;
-            width: 700px;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: black;
-            font-family: 'Rajdhani', sans-serif;
-            font-size: 55px;
-            letter-spacing: -2px;
-            line-height: 90px;
-            word-spacing: 2px;
-        }
-        .insurances {
-            position: relative;
-            top: -660px;
-            left: -70px;
-            width: 800px;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: black;
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 36px;
-            letter-spacing: -2px;
-            line-height: 46px;
-            word-spacing: 2px;
-        }
-        .meet {
-            position: relative;
-            top: -380px;
-            left: -465px;
-            width: 1300px;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: black;
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 55px;
-            letter-spacing: -2px;
-            line-height: 46px;
-            word-spacing: 2px;
-        }
-       
-        .meet1 {
-            position: relative;
-            top: -335px;
-            left: -593px;
-            width: 1300px;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: black;
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 55px;
-            letter-spacing: -2px;
-            line-height: 46px;
-            word-spacing: 2px;
-        }
-        .whatis1 {
-            position: relative;
-            top: -210px;
-            left: -188px;
-            width: 700px;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: black;
-            font-family: 'Rajdhani', sans-serif;
-            font-size: 55px;
-            letter-spacing: -2px;
-            line-height: 90px;
-            word-spacing: 2px;
-        }
-        .whatis2 {
-            position: relative;
-            top: -182px;
-            left: 200px;
-            width: 700px;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-family: 'Rajdhani', sans-serif;
-            font-size: 16px;
-            letter-spacing: 2px;
-            word-spacing: 2px;
-        }
-        .whatis3 {
-            position: absolute;
-            top: -70px;
-            left: -380px;
-            width: 700px;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-family: 'Rajdhani', sans-serif;
-            font-size: 16px;
-            letter-spacing: 2px;
-            word-spacing: 2px;
-        }
-        .whatis4 {
-            position: relative;
-            left: -70px;
-            width: 700px;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-family: 'Rajdhani', sans-serif;
-            font-size: 16px;
-            letter-spacing: 2px;
-            word-spacing: 2px;
-            line-height: 30px;
-        }
-        .whatis5 {
-            position: relative;
-            top: -75px;
-            left: 290px;
-            width: 700px;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-family: 'Rajdhani', sans-serif;
-            font-size: 16px;
-            letter-spacing: 2px;
-            word-spacing: 2px;
-            line-height: 30px;
-
-        } 
-        .get-started-button {
-            position: absolute;
-            left: 20%;
-            transform: translate(-50%, -50%);
-            background-color: rgb(100, 246, 107);
-            color: black;
-            padding: 13px 45px;
-            font-size: 20px;
-            font-weight: bold;
-            border-color: black;
-            text-decoration: none;
-            border-radius: 22px;
-        font-family: 'Rajdhani', sans-serif;
-            letter-spacing: 2px;
-            font-weight: bold;
-        }
-   
-        .form{
-            position: absolute;
-            top: 70%;
-            left: 300px;
-            transform: translate(-50%, -50%);
-            background-color: black;
-            color: white;
-            padding: 7px 25px;
-            font-size: 17px;
-            font-weight: bold;
-            border-color: black;
-            text-decoration: none;
-            border-radius: 22px;
-        font-family: 'Rajdhani', sans-serif;
-            letter-spacing: 2px;
-            font-weight: bold;
-        }
-        .logo {
-            position: relative;
-            top: -8px;
-            width: 90px;
-            padding: 0px;
-        }
-
-        .run {
-            position: relative;
-            top: -300px;
-        }
-
-        .whatsis {
-            position: relative;
-            float: right;
-            top: -8000px;
-            color: black;
-        }
-
-        /* Added CSS for sticky header */
-        .sticky {
-            position: fixed;
-            top: 0;
-            opacity: 1;
-        }
-.left{
-    border-radius: 100%;
-    height: 90px;
-    width: 90px;
-    color: white;
-    background-color: rgb(255, 255, 255);
-}
-        .white-bg {
-            position: absolute;
-            width: 100%;
-            height: 2100px;
-            top: 700px;
-            left: 0;
-            background: rgb(255, 255, 255);
-            z-index: 0;
-        }
-        .beige {
-            position: absolute;
-            width: 70%;
-            height: 570px;
-            top: 600px;
-            left: 70px;
-            background: rgb(245, 245, 245);
-            z-index: 0;
-            border-radius: 40px;
-        }
-        .beige1 {
-            position: absolute;
-            width: 890px;
-            height: 450px;
-            top: 320px;
-            left: -5px;
-            background: rgb(245, 245, 245);
-            z-index: 0;
-            border-radius: 40px;
-        }
-        .leaf{
-            position: absolute;
-            top: 160px;
-            left: 870px;
-           width: 35%;
-        }
-        .fly{
-            position: absolute;
-            top: 50px;
-            left: 130px;
-           width: 11%;
-        }
-        .beige2 {
-            position: absolute;
-            left: -400px;
-            width: 1375px;
-            height: 635px;
-            top: 3200px;
-            background:  rgb(34, 155, 45);
-            border-top: 2px solid black;
-
-        }
-        .beige3 {
-            position: absolute;
-            left: -400px;
-            width: 1375px;
-            overflow: hidden;
-            height: 250px;
-            top: 3800px;
-            margin: 0px 0px;
-            background:  black;
-            
-        }
-        .info{
-        }
-        .slideshow {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 200px;
-        }
-
-        .rectangle {
-            width: 200px;
-            height: 500px;
-            background-color: gray;
-        }
-
-        .image-container {
-            position: relative;
-            width: 300px;
-            height: 200px;
-            overflow: hidden;
-        }
-
-        .image {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            transition: opacity 0.5s ease-in-out;
-        }
-        .fade{
-background: black;
-        }
-
-        .image.fade-out {
-            opacity: 0;
-        }
-
-        .image.fade-in {
-            opacity: 1;
-        }
-    
-        .black{
-            position: absolute;
-            left: 25%;
-            top: 30.5%;
-            height: 210px;
-            width: 150px;
-            background-color: black;
-            border-radius: 10px;
-
-        }
-        .black1{
-            position: absolute;
-            left: 50.5%;
-            top: 53%;
-            height: 210px;
-            width: 150px;
-            background-color: black;
-            border-radius: 10px;
-
-        }
-        .black2{
-            position: absolute;
-            left: 50.5%;
-            top: 10.5%;
-            height: 210px;
-            width: 150px;
-            background-color: black;
-            border-radius: 10px;
-
-        }
-        .pic{ position: relative;
-            top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-            max-width: 80%;
-            border-radius: 10px;
-        }
-        .shop{
-            width: 70px;
-            border-radius: 2px;
-            height: 20px;
-            text-align: center;
-            background-color: rgb(246,221,100);
-            color: black;
-            position: relative;
-            top: 85%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 13px;
-            font-family: 'Rajdhani', sans-serif;
-            font-weight: bold;
-        }
-        .writing{
-            position: relative;
-            font-size: 50px;
-            top: 80px;
-            left: 860px;
-            color: black;
-            
-        }
-        .black.fade-out,
-.black1.fade-out,
-.black2.fade-out {
-    opacity: 0;
-    pointer-events: none; /* This will prevent clicks on faded containers */
-    transition: opacity 0.5s ease-in-out;
-}
-a {
-    text-decoration: none; /* Remove underline from all anchor tags */
-}
-.faq {
-    position: relative;
-    top: 820px;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    color: black;
-}
-.question-text{
-    font-family: 'Rajdhani', sans-serif;
-            font-size: 27px;
-}
-.question {
-
-    cursor: pointer;
-    border-bottom: 1px solid rgb(226, 226, 226);
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.question-text {
-    flex-grow: 1;
-}
-.answer {
-    position: sticky;
-    top: 80px;
-    display: none;
-    padding-bottom: -20px;
-    background-color: #fff;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 19px;
-    font-weight: bold;
-    
-}
-
-.question.active {
-    position: static;
-  border-bottom: 1px solid  rgb(175, 175, 175); /* Add your preferred line styles here */
-    margin-bottom: 4px;
-  display: flex;
-}
-.tab{
-    color: black;
-    position: relative;
-    left: -70px;
-    font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 55px;
-            letter-spacing: -2px;
-            line-height: 90px;
-            word-spacing: 2px;
-}
-.tabdes{
-    font-size: 27px;
-    color: black;
-    position: relative;
-    left: -70px;
-}
-.arrow{
-    width: 25px;
-    position: relative;
-    left: -80px;
-    padding-left: 10px;
-    cursor: pointer;
-        }
-       
-        .faded {
-            opacity: 0.3;
-        }
-        
-.red-box{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    display: none; /* Initially hide the red box */
-
-}
-.tiny{
-    height: 120px;
-    width: 120px;
-    position: relative;
-    left: 40px;
-    
-}
-.tiny1{
-    position: relative;
-    top: -5px;
-    left: 35px;
-    height: 120px;
-    width: 120px;
-   
-}
-.missiontiny{
-    font-family: 'Rajdhani', sans-serif;
-            font-size: 23px;
-            position: relative;
-            top: -435px;
-            width: 750px;
-            left: 45px;
-}
-.missiontiny1{
-    font-family: 'Rajdhani', sans-serif;
-            font-size: 23px;
-            position: relative;
-            top: 290px;
-            width: 750px;
-            left: 40px;
-}
-.qa-pair{
-    position: relative;
-    top: -365px;
-    width: 1200px;
-    left: -290px;
-
-}
-
-.containern {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      margin: 20px;
-      position: relative;
-      top: -370px;
-      width: 1200px;
-      left: -315px;
+    /* Responsive Nav */
+    .insurances{
+      text-align: center;
+      padding-top: 90px;
+      color: black;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 36px;
+      letter-spacing: -2px;
+      line-height: 46px;
+      word-spacing: 2px;
     }
+    @media (max-width: 768px) {
+      .header {
+        position: fixed;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        
+      }
+
+      .header ul {
+          display: none;
+          flex-direction: column;
+          padding: 0;
+          width: 100%;
+      }
+
+      .header ul.active {
+          display: flex;
+      }
+
+      .header li {
+          margin: 10px 0;
+      }
+
+      .header .logo img {
+          
+          height: 30px;
+      }
+
+      .menu-toggle {
+          display: block;
+      }
+    }
+
+    /* Feature Image */
+    .feature-img {
+      position: relative;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+     
+    }
+
+    .feature-img img.large {
+      width: 100%;
+      height: auto;
+    }
+.final{
+    font-family: 'IBM Plex Sans', sans-serif;
+
+}
+    .feature-img .overlay {
+        position: absolute;
+        top: -112px;
+        left: -7%;
+        right: 50%;
+        width: 1800px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 52px;
+        letter-spacing: -2px;
+        line-height: 67px;
+        word-spacing: 2px;
+    }
+    
+    
+    .get-started-button {
+      position: absolute;
+      top: 58%; /* Adjust as needed */
+      left: 12%;
+      transform: translate(-50%, -50%);
+      background-color: rgb(100, 246, 107);
+      color: black;
+      padding: 13px 45px;
+      font-size: 20px;
+      border-color: black;
+      text-decoration: none;
+      border-radius: 22px;
+      font-family: 'Rajdhani', sans-serif;
+      letter-spacing: 2px;
+      font-weight: bold;
+      z-index: 2; /* Ensure button is above overlay */
+    }
+    .beige {
+        position: absolute;
+        width: 70%;
+        height: 570px;
+        top: 600px;
+        left: 70px;
+        background: rgb(245, 245, 245);
+        z-index: 0;
+        border-radius: 40px;
+    }
+    
+    /* Services */
+   
+
+    .services-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+      margin-top: 30px;
+      padding-bottom: 20px;
+    }
+
+    .services-list div {
+      background: #262626;
+      padding: 20px;
+      font-size: 14px;
+      color: #fff;
+      border-radius: 10px;
+      transition: background 0.5s, transform 0.5s;
+    }
+
+    .services-list div i {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .services-list div h2 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .services-list div a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 12px;
+    }
+    .services-list div:hover {
+        transform: translateY(-5px) scale(1.02);
+      background: #333;
+    }
+
+    .tiny{
+        height: 120px;
+        width: 120px;
+        position: relative;
+    }
+    .tiny1{
+        position: relative;
+        top: -5px;
+       
+        height: 120px;
+        width: 120px;
+
+    }
+    
+    
+    .domain{
+        color: #fff;
+    }
+    .run {
+        border: 2px solid white; /* Border */
+        background-color: #f0f0f0; /* Grey background */
+        padding: 20px; /* Padding inside the border */
+        border-radius: 10px; /* Rounded corners */
+        box-sizing: border-box; /* Include padding and border in total width and height */
+        display: flex; /* Optional: If you want to use flexbox for internal layout */
+        flex-direction: column; /* Stack children vertically */
+        height:auto;/* Minimum height to ensure some length */
+      max-width: 80%;  
+      margin-left: 5%;
+      margin-top: 60px;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 23px;
+    }
+    .run strong{
+          color: black;
+          font-family: 'Rajdhani', sans-serif;
+          font-size: 55px;
+          letter-spacing: -2px;
+          word-spacing: 1px;
+          top:0;
+      }
+     
+    
+
+    .missiontiny1 {
+      font-family: 'Rajdhani', sans-serif;
+          font-size: 23px;        
+      font-weight: lighter;
+       color:grey;
+    }
+
+    .beige1 {
+      border: 2px solid white; /* Border */
+        background-color: #f0f0f0; /* Grey background */
+        padding: 20px; /* Padding inside the border */
+        border-radius: 10px; /* Rounded corners */
+        box-sizing: border-box; /* Include padding and border in total width and height */
+        display: flex; /* Optional: If you want to use flexbox for internal layout */
+        flex-direction: column; /* Stack children vertically */
+        height: 407px;/* Minimum height to ensure some length */
+      max-width: 100%;  
+      margin-left: 30%;
+      margin-top:4%;
+    }
+   .missiontiny{
+position: relative;
+top: -100px;
+      font-family: 'Rajdhani', sans-serif;
+          font-size: 23px;        
+      font-weight: lighter;
+       color:grey;
+    }
+    .beige1 strong{
+      color: black;
+          font-family: 'Rajdhani', sans-serif;
+          font-size: 55px;
+          letter-spacing: -2px;
+          word-spacing: 2px;
+      }
+
+    
+
+    
+
+    
+
+    /* Optional: Reset margin and padding for child elements to ensure they fit well */
+    .run * {
+        margin: 0;
+        padding: 0;
+
+    }
+    /* Responsive Services */
+    @media (max-width: 768px) {
+      .run{
+        font-size:10px;
+      }
+      .run strong{
+        font-size: 30px;
+      }
+      .missiontiny{
+         padding-top: 27px;
+          font-size: 60%;
+      }
+
+      .beige1 {
+        font: size 5px;
+        height: 450px;
+      }
+      .beige1 strong{
+        font-size: 32px;
+        padding-top: 17px;
+      }
+      .feature-img {
+        margin-top: 40px;
+      }
+      .services-list {
+        grid-template-columns: 1fr;
+      }
+      .services-list div {
+        padding: 15px;
+        font-size: 12px;
+      }
+      
+      .services-list div {
+        padding: 15px;
+        font-size: 12px;
+      }
+
+      .services-list div i {
+        font-size: 30px;
+      }
+
+      .services-list div h2 {
+        font-size: 16px;
+      }
+      
+    }
+
+    /* Carousel */
+    .carousel-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      margin: 20px auto;
+      padding-bottom: 120px;
+    }
+
+    .carousel-inner {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+      animation: scroll 21s linear infinite;
+      width: calc(300px * 12);
+    }
+
+    .carousel-item {
+      height: 200px;
+      flex: 1 0 auto;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .carousel-item1{
+      height: 200px;
+      flex: 1 0 auto;
+
+    }
+    .carousel-item1 img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* FAQ */
+    .faq {
+      padding: 20px;
+      background: #f9f9f9;
+    }
+  .meet1{
+    color: black;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 55px;
+    letter-spacing: -2px;
+    line-height: 46px;
+    word-spacing: 2px;
+  }
+    .question {
+      cursor: pointer;
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .question-text{
+        font-family: 'Rajdhani', sans-serif;
+                font-size: 27px;
+    }
+    .answer {
+      display: none;
+      padding: 10px 0;
+      font-weight: bold;
+    }
+    
+    /* Responsive FAQ */
+    @media (max-width: 768px) {
+      .feature-img .overlay {
+        font-size: 20px; /* Smaller font size for smaller screens */
+        line-height: 30px;
+        width: 70%; /* Increase width for small screens */
+        left: 2%; /* Adjust position to be closer to the left edge */
+        top: 30%; /* Center vertically, adjust as needed */
+        transform: translateY(-50%); /* Maintain vertical centering */
+      }
+      .form-section input, textarea{
+          position: relative;
+          left: 65px;
+          padding-bottom: 30px;
+      }
+      .form-section  textarea{
+          position: relative;
+          left: 65px;
+          margin-bottom: 30px;
+      }
+      .imagen{
+width: 800px;
+      }
+      .subtextn{
+          font-size: 90px;
+      }
+     .overlay .greese{
+         position: relative;
+         font-size: 80%;
+width: 2400px;
+display: flex;
+left: 3%;
+letter-spacing: .05px;
+line-height: 24px;
+
+     }
+     .overlay .what{
+         position: relative;
+         top: 55px;
+         left: -170px;
+         font-size: 13px;
+         width: 1600px;
+         letter-spacing: .05px;
+         line-height: 18px;
+     }
+      .get-started-button {
+          position: relative;
+        font-size: 14px; /* Even smaller font size for very small screens */
+        padding: 8px 20px; /* Further reduced padding */
+        border-radius: 15px; /* Smaller border radius */
+        width: 24%; /* Make button width responsive */
+        height: 8%;
+        left: 2%;
+        top: -70px;
+        
+        /*transform: translateX(-50%); /* Center button horizontally */
+         /* Adjust top margin for smaller screens */
+      }
+      .faq {
+        padding: 10px;
+      }
+      .what{
+          color: red;
+         font-size: 12px;
+     }
+    }
+
+    /* Profile Section */
+    .containern {
+    margin: 20px;
+    padding-bottom: 80px;
+         }
+    
     .profilen {
       display: flex;
       width: 100%; /* Adjust width as needed */
       padding: 20px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for separation */
     }
-    .imagen {
-      flex: 1; /* Adjust flex ratio based on content size */
-      padding: 10px;
-    }
-    .imagen img {
-      width: 100%;
-      height: auto;
-      border: 5px solid green; /* Green outline around the image */
-    }
-    .textn { 
-      flex: 2; /* Adjust flex ratio based on content size */
-      padding: 10px;
-      text-align: left;
-    }
-    .headern {
-        font-family: 'Rajdhani', sans-serif;
-            font-size: 33px;
-      color: #333; /* Dark color for text */
-      left: 15px;
-position: relative;
-    }
+
+    
+     .headern {
+            font-family: 'Rajdhani', sans-serif;
+                font-size: 33px;
+          color: #333; /* Dark color for text */
+          left: 15px;
+    position: relative;
+        }
+
     .headern1 {
-        font-family: 'Rajdhani', sans-serif;
-            font-size: 33px;
-      color: #333; /* Dark color for text */
-      left: -2px;
-position: relative;
-    }
+            font-family: 'Rajdhani', sans-serif;
+                font-size: 33px;
+          color: #333; /* Dark color for text */
+          left: 15px;
+    position: relative;
+        }
+
     .subtextn {
         font-family: 'Rajdhani', sans-serif;
             font-size: 23px;
@@ -803,6 +588,30 @@ position: relative;
             top: 10px;
             left: 15px;
     }
+    .subtextn{
+        font-family: 'Rajdhani', sans-serif;
+            font-size: 20px;
+            position: relative;
+            top: 10px;
+            left: 15px;
+    }
+    .what{
+position: relative;
+font-family: 'Rajdhani', sans-serif;
+            font-size: 28px;
+            color: white;
+            width: 1000px;
+            top: 100px;
+            left: -28%;;
+}
+    .imagen img {
+      width: 100%;
+      height: auto;
+      border: 5px solid green;
+    }
+
+    
+    
     .subtext {
         font-family: 'Rajdhani', sans-serif;
             font-size: 23px;
@@ -810,740 +619,1055 @@ position: relative;
             top: 10px;
     }
     .profilen.reverse {
-      flex-direction: row-reverse; /* Inverts the order for the second profile */
+      flex-direction: row-reverse;
     }
-    #services{
-    position: relative;
-    top: -200px;
-}
-#providers{
-    position: relative;
-    top: 1160px;
-}
-#team{
-    position: relative;
-    top: 3000px;
-}
-#cask{
-    position: relative;
-    top: 1730px;
-}
-#realm{
-    position: relative;
-    top: 3680px;
-}
-#start{
-    position: relative;
-    top: 3780px;
-}
 
-.what{
-position: relative;
-top: -300px;
-font-family: 'Rajdhani', sans-serif;
-            font-size: 28px;
-            color: white;
-            left: 40px;
-}
-.grouping{
-    position: relative;
-    top: 330px;
-}
-.inform{
-    position: relative;
-    left: 490px;
-    top: 87px;
-}
-.dontmove{
-    position: absolute;
-    top: 140px;
-    left: 483px;
-    width: 600px;
-    border: 0;
-    outline: none;
-    background: rgb(34, 155, 45);
-    padding: 15px;
-    margin: 15px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 6px;
-}
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 5px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 6px;
-}
-form .btn2{
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-    border-radius: 6px;
-    background-color: #fff;
-}
-.stick1{
-    position: relative;
-   top: -460px;
-   left: -105px;
-}
-.put{
-    position: static;
-}
-@media (max-width: 768px) {
-    .carousel-item {
-        width: 100%; /* Full width on smaller screens */
+    .textn {
+      padding: 10px;
     }
-    .container, .ren, .sub-title1, .whatis, .whatis1, .gas, .beige, .beige1, .beige2, .beige3 {
-        left: 0;
-        top: 0;
-        width: 100%; /* Adjust width and positioning on smaller devices */
+
+    .textn .headern {
+      font-weight: bold;
     }
-    .services-list div, .faq, .tab, .tabdes, .whatsis, .feature-img {
-        padding: 10px; /* Smaller padding on smaller devices */
+
+    .textn .headern1{
+      font-weight: bold;
     }
-}
-
-@media (max-width: 480px) {
-    .header li {
-        margin-right: 20px; /* Less margin between menu items */
-    }
-    .services-list {
-        grid-template-columns: 1fr; /* Stack items on very small screens */
-    }
-}
-
-
-
-    </style>
-</head>
-<body>
-   
-    <header class="header">
-        <nav>
-            <ul>
-                <li class="logo"><a href="index.html"><img class ="logo" src="images/BLK.png" alt=""></a></li>
-                <li><a href="#services" class="login-button">SERVICES</a></li>
-                <li><a href="#providers" class="login-button">PROVIDERS</a></li>
-                <li><a href="#cask" class="login-button">OUR TEAM</a></li>
-                <li><a href="#team" class="login-button">FAQs</a></li>
-                <li><a href="#realm" class="signup-button">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="white-bg"></div>
-    <div class="beige">
-
-        <p class="missiontiny1"> Relief Behavioral Health is an outpatient behavioral health clinic that provides psychiatric services for
-            people of all ages who are facing behavioral and mental health concerns such as depression, anxiety
-            disorders, substance dependency, schizophrenia, personality disorders, bipolar disorder, and sleep
-            disorders. We provide mobile psychiatric care, telehealth and in-person office visits. Services include
-            brief psychotherapy and medication management.</p>
     
-    </div>
-    
-    <div class="feature-img">
-        <img class="large" src="images/WatchOut.png">
-        <div class="overlay">
-            <p> Find support you need
-                Wherever you are </p>
-             
-        </div>
-        
-        <p class="what"> Personalized remote support suited for all</p>
-        <div class="run">
-         <strong>  <p class="whatis"> About RBH Relief</p> </strong> 
-        </div>
-   
-        <div class="stick1">
-            <a class="get-started-button" href="#start">Get Started</a>
-            
-        </div>
+
+    .textn .subtextn {
+      font-size: 23px;
+    }
+
+    .meet {
+     font-weight: bold;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 40px;
+      color: #000000;
       
+    }
+
+    /* Contact Section */
+    .contact-right form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-right input, .contact-right textarea {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .contact-right button {
+      padding: 10px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-right button:hover {
+      background-color: #218838;
+    }
+    form input, form textarea{
+        width: 60%;
+        border: 0;
+        outline: none;
+        background: #262626;
+        padding: 15px;
+        margin: 5px 0;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 6px;
+    }
+    form .btn2{
+        padding: 14px 60px;
+        font-size: 18px;
+        margin-top: 20px;
+        cursor: pointer;
+        border-radius: 6px;
+        background-color: #fff;
+    }
+
+  
+
+    /* Footer Section */
+   
+    .beige2, .beige3 {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .beige2 img, .beige3 img {
+      width: 100px;
+    }
+
+    .info {
+      padding: 20px;
+    }
+
+    .info img {
+      width: 100%;
+      height: auto;
+    }
+    .beige2{
+      background-color: green;
+      
+    }
+
+    /* Responsive Layout Adjustments */
+    @media (max-width: 1024px) {
+      .feature-img {
+        height: auto;
+      }
+
+      .carousel-item {
+        height: 150px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .feature-img {
+        height: auto;
+      }
+      .textn .subtextn {
+        font-size: 18px;
+      }
+      .textn .subtext{
+        font-size:18px;
+      }
+
+      .carousel-item {
+        height: 100px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header {
+        padding: 10px 5px;
+      }
+
+      .header .logo img {
+        height: 25px;
+      }
+
+      .feature-img img.large {
+        height: auto;
+      }
+
+      .services-list div {
+        font-size: 11px;
+        padding: 10px;
+      }
+
+      .question {
+        font-size: 14px;
+      }
+
+      .answer {
+        font-size: 12px;
+      }
+
+      .contact-right input, .contact-right textarea {
+        font-size: 14px;
+      }
+
+      .contact-right button {
+        font-size: 14px;
+        padding: 8px;
+      }
+      
+    }
+    .gas{
+      display: flex;
+      flex-direction: column;
+      color: white;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 70px;
+      letter-spacing: -2px;
+      line-height: 90px;
+      word-spacing: 2px;
+      margin-bottom: 0; /* Remove any margin below the heading */
+      padding-bottom: 0; /* Remove any padding below the heading */
+      line-height: 1.2; 
+    }
+    .stuck{
+        padding-bottom: 120px;
+    }
+    .whatis{
+        padding-bottom: 30px;
+    }
+    .whatis1{
+        position: relative;
+        top: -50px;
+    }
+    .whatis2 {
+      color: white;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 16px;
+      letter-spacing: 2px;
+      word-spacing: 2px;
+      margin-top: 0; /* Remove any margin above the paragraph */
+      padding-top: 0; 
+    }
+    .four{
+        width: 800px;
+    }
+    .containerh {
+          
+          margin-top : 1%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          padding: 20px;
+          padding-left: 4%; 
+          box-sizing: border-box;
+          background-color:green;
+          border: 5px solid black; /* Border */
+          overflow:hidden;
+      }
+
+      .form-section {
+          width: 60%;
+          color: white;
+      }
+
+      .containerh h1 {
+          font-size: 64px;
+          margin: 0 0 20px 0;
+          text-align: left;
+      }
+
+     .containerh p {
+          margin: 0 0 40px 0;
+          font-size: 26px;
+          text-align: left;
+      }
+
+      form {
+          display: flex;
+          flex-direction: column;
+      }
+
+      input, textarea {
+          margin-bottom: 15px;
+          padding: 15px;
+          font-size: 18px;
+          border-radius: 5px;
+          border: none;
+          background-color: #333;
+          color: white;
+      }
+
+      textarea {
+          height: 150px;
+          resize: none;
+      }
+
+     .containerh button {
+          padding: 5px;
+          font-size: 18px;
+          border-radius: 5px;
+          border: none;
+          background-color: white;
+          color: black;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          max-width: 400px; /* Set maximum width */
+      }
+
+     .containerh button:hover {
+          background-color: #ccc;
+      }
+
+      .image-section {
+          width: 58%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .image-section img {
+          max-width: 100%;
+          max-height: 100%;
+          border-radius: 10px;
+      }
+    @media (max-width: 768px) {
+        .containerh {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-section, .image-section {
+            width: 100%;
+            text-align: center;
+        }
+
+        .form-section h1 {
+            font-size: 48px;
+        }
+
+        .form-section p {
+            font-size: 16px;
+            margin: 0 0 20px 0;
+        }
+
+        form input, form textarea, form button {
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        .image-section {
+            margin-top: 20px;
+        }
+      .headern{
+        font-size: 25px;
+      }
+      .headern1{
+        font-size:25px;
+      }
+      .subtextn{
+        font-size:200px;
+          
+      }
+      
+      .meet{
+          font-size: 35px;
+      }.meet1{
+          font-size: 40px;
+      }
+    }
+.sub-title{
+    color: black;
+}
+    /* Extra small screens (phones) */
+    @media (max-width: 480px) {
+        .form-section h1 {
+            font-size: 36px;
+        }
+
+        .form-section p {
+            font-size: 14px;
+        }
+
+        form input, form textarea, form button {
+            font-size: 14px;
+            padding: 8px;
+        }
+    }
+    footer {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 20px 0;
+        text-align: center;
+        font-family: 'Rajdhani', sans-serif;
+      font-size:16px;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .logo-container {
+        flex: 1;
+        text-align: left;
+        position: relative;
+        left: 50px;
+    }
+
+    .footer-logo {
+        max-width: 150px;
+        height: auto;
+    }
+
+    .address-container,
+    .contact-container,
+    .rights-container {
+        flex: 1;
+        margin: 10px;
+        text-align: left;
+    }
+
+    .address-container p,
+    .contact-container p,
+    .rights-container p {
+        margin: 5px 0;
+        line-height: 1.5;
+    }
+
+    /* Responsive Design for Medium Screens (Tablets) */
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .logo-container {
+            text-align: center;
+            position: relative;
+            left: -0px;
+        }
+
+        .address-container,
+        .contact-container,
+        .rights-container {
+            text-align: center;
+        }
+    }
+
+    /* Responsive Design for Small Screens (Phones) */
+    @media (max-width: 480px) {
+        footer {
+            padding: 15px 0;
+        }
+
+        .footer-logo {
+            max-width: 120px;
+        }
+
+        .address-container,
+        .contact-container,
+        .rights-container {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .footer-container {
+            padding: 0 10px;
+        }
+    }
+    
+    
+
+    
+
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+      <nav>
+          <button class="menu-toggle" id="menu-toggle">☰</button>
         
+          <ul id="nav-menu">
+              <li class="logo"><a href="index.html"><img class="logo" src="images/BLK.png" alt="Logo"></a></li>
+              <li><a href="#services" class="login-button">SERVICES</a></li>
+              <li><a href="#client" class="login-button">PROVIDERS</a></li>
+              <li><a href="#gro" class="login-button">OUR TEAM</a></li>
+              <li><a href="#faq" class="login-button">FAQs</a></li>
+              <li><a href="#contac" class="signup-button">CONTACT</a></li>
+          </ul>
+      </nav>
+  </header>
+  <div class="white-bg"></div>
+ 
+
+  <div class="feature-img">
+    <img class="large" src="images/WatchOut.png">
+    <div class="overlay">
+      <p class="greese"> Find support you need <br>
+        Wherever you are </p>
+
+        <p class="what"> Personalized remote support suited for all</p>
+
     </div>
 
-
-    <div class="faq">
-        <div id="ren">
-            <div class="container">
-                <div id="services">
-                </div>
-                <div id="providers">
-                </div>
-                <div id="team">
-                </div>
-                <div id="cask"> </div>
-                <div id="realm"> </div>
-                <div id="start"> </div>
-
-                <h1 class="sub-title">What We Treat?</h1>
-                <div class="services-list">
-                    <div>
-                        <i class="fas fa-code"></i>
-                        <img class = "tiny" src="images/ocd.png">
-                        <h2 class="flight">OCD</h2>
-                        <p class="domain">Obsessive-compulsive disorder (OCD) is a mental health issue characterized by persistent intrusive thoughts and repetitive actions known as compulsions. While OCD can be relatively benign, it often disrupts everyday tasks, work responsibilities, and interpersonal connections.</div>
-                            <div>
-                                <i class="fas fa-crop-alt"></i>
-                                <img class = "tiny" src="images/anxiety.png">
-                                <h2>Anxiety</h2>
-                                <p class="domain">Fear, worry, uneasiness, or stress caused due to anxiety issues can be controlled when there is treatment available for help.</p>
-                            </div> <div>
-                                <i class="fas fa-crop-alt"></i>
-                                <img class = "tiny" src="images/adhd.png">
-                                <h2>ADD/ADHD</h2>
-                                <p class="domain">ADHD (Attention-Deficit Hyperactivity Disorder), and ADD (Attention Deficit Disorder) are mental health conditions that makes it difficult to focus on work and school life.</p>
-                            </div> <div>
-                                <i class="fas fa-crop-alt"></i>
-                                <img class = "tiny" src="images/depression.png">
-                                <h2>Depression</h2>
-                                <p class="domain">If you find yourself consistently experiencing low moods and disengagement from activities and relationships you once enjoyed, you might be dealing with depression.</p>
-                            </div> <div>
-                    
-                                <i class="fas fa-crop-alt"></i>
-                                <img class = "tiny" src="images/bipolar.png">
-                                <h2>Bipolar Disorder</h2>
-                                <p class="domain">Bipolar disorder is A disorder associated with episodes of mood swings ranging from depressive lows to manic highs.</p>
-                            </div><div>
-                                <i class="fas fa-crop-alt"></i>
-                                <img class = "tiny1" src="images/ptsd.png">
-                                <h2>PTSD</h2>
-                                <p class="domain">PTSD, known as Post Traumatic Stress Disorder, is a psychological condition where individuals struggle to recover after being exposed to or experiencing a deeply distressing event. The lingering impact of such trauma can be profound and persistent.</p>
-                            </div><div>
-                                <i class="fas fa-crop-alt"></i>
-                                <img class = "tiny" src="images/subs.png">
-                                <h2>Substance Abuse</h2>
-                                <p class="domain">A person is under the influence of Substance Use if they do Excessive use of psychoactive drugs, such as alcohol, pain medications, or illegal drugs. And excess use of this substance can lead to physical, social, or emotional harm.</p>
-                            </div>
-                    <div>
-
-                        <i class="fab fa-app-store"></i>
-                        <img class = "tiny" src="images/meds.png">
-                        <h2>Medication Management</h2>
-                                <p class="domain">Medication management is essential for patients suffering from mental health problems or psychiatric issues to help them cope with symptoms.</p>
-                         </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="beige1">
-         <strong> <p class="whatis1"> Our Mission</p> </strong> 
-            <p class="missiontiny"> At Relief Behavioral Health, our mission is to provide compassionate and comprehensive psychiatric care to individuals of all ages facing behavioral health challenges. Through a commitment to personalized treatment, including brief psychotherapy and medication management, we strive to empower our patients on their journey towards mental well-being. We extend our services beyond traditional boundaries by offering mobile psychiatric care to group homes and residential programs, ensuring accessibility and support where it is needed most. Whether through virtual consultations or in-person visits, we are dedicated to fostering a therapeutic environment that promotes healing, resilience, and hope.</p>
     
-        </div>
+    <div class="stick1">
+      <a class="get-started-button" href="#contac">Get Started</a>
 
-        <!-- FAQ Questions and Answers -->
+    </div>
+     </div>
+  
+    <div class="run">
+      <strong>
+        <p class="whatis"> About RBH Relief</p>
        
-    
-<div class="carousel-container">
-    <div class="carousel-inner" id="carousel">
+      </strong>
+      
+      <p class="missiontiny1"> Relief Behavioral Health is an outpatient behavioral health clinic that provides psychiatric services for
+        people of all ages who are facing behavioral and mental health concerns such as depression, anxiety
+        disorders, substance dependency, schizophrenia, personality disorders, bipolar disorder, and sleep
+        disorders. We provide mobile psychiatric care, telehealth and in-person office visits. Services include
+        brief psychotherapy and medication management.</p>
+      
+    </div>
+
+   
+
+
+ 
+
+   
+  
+  
+
+
+  <div class="faq">
+    <div id="ren">
+      <div class="container">
+        <div id="services">
+        </div>
+        <div id="providers">
+        </div>
+        <div id="team">
+        </div>
+        <div id="cask"> </div>
+        <div id="realm"> </div>
+        <div id="start"> </div>
+
+        <h1 class="sub-title">What We Treat?</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <center><img class="tiny" src="images/ocd.png"></center>
+            <h2 class="flight">OCD</h2>
+            <p class="domain">Obsessive-compulsive disorder (OCD) is a mental health issue characterized by persistent
+              intrusive thoughts and repetitive actions known as compulsions. While OCD can be relatively benign, it
+              often disrupts everyday tasks, work responsibilities, and interpersonal connections.
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <center><img class="tiny" src="images/anxiety.png"></center>
+            <h2>Anxiety</h2>
+            <p class="domain">Fear, worry, uneasiness, or stress caused due to anxiety issues can be controlled when
+              there is treatment available for help.</p>
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <center><img class="tiny" src="images/adhd.png"></center>
+            <h2>ADD/ADHD</h2>
+            <p class="domain">ADHD (Attention-Deficit Hyperactivity Disorder), and ADD (Attention Deficit Disorder) are
+              mental health conditions that makes it difficult to focus on work and school life.</p>
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <center><img class="tiny" src="images/depression.png"></center>
+            <h2>Depression</h2>
+            <p class="domain">If you find yourself consistently experiencing low moods and disengagement from activities
+              and relationships you once enjoyed, you might be dealing with depression.</p>
+          </div>
+          <div>
+
+            <i class="fas fa-crop-alt"></i>
+            <center><img class="tiny" src="images/bipolar.png"></center>
+            <h2>Bipolar Disorder</h2>
+            <p class="domain">Bipolar disorder is A disorder associated with episodes of mood swings ranging from
+              depressive lows to manic highs.</p>
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <center><img class="tiny1" src="images/ptsd.png"></center>
+            <h2>PTSD</h2>
+            <p class="domain">PTSD, known as Post Traumatic Stress Disorder, is a psychological condition where
+              individuals struggle to recover after being exposed to or experiencing a deeply distressing event. The
+              lingering impact of such trauma can be profound and persistent.</p>
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <center><img class="tiny" src="images/subs.png"></center>
+            <h2>Substance Abuse</h2>
+            <p class="domain">A person is under the influence of Substance Use if they do Excessive use of psychoactive
+              drugs, such as alcohol, pain medications, or illegal drugs. And excess use of this substance can lead to
+              physical, social, or emotional harm.</p>
+          </div>
+          <div>
+
+            <i class="fab fa-app-store"></i>
+            <center><img class="tiny" src="images/meds.png"></center>
+            <h2>Medication Management</h2>
+            <p class="domain">Medication management is essential for patients suffering from mental health problems or
+              psychiatric issues to help them cope with symptoms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="beige1">
+      <strong>
+        <p class="whatis1"> Our Mission</p>
+      </strong>
+      <p class="missiontiny"> At Relief Behavioral Health, our mission is to provide compassionate and comprehensive
+        psychiatric care to individuals of all ages facing behavioral health challenges. Through a commitment to
+        personalized treatment, including brief psychotherapy and medication management, we strive to empower our
+        patients on their journey towards mental well-being. We extend our services beyond traditional boundaries by
+        offering mobile psychiatric care to group homes and residential programs, ensuring accessibility and support
+        where it is needed most. Whether through virtual consultations or in-person visits, we are dedicated to
+        fostering a therapeutic environment that promotes healing, resilience, and hope.</p>
+
+    </div>
+
+    <!-- FAQ Questions and Answers -->
+    <div class="grouping" id="client">
+      <p class="insurances"> Our clients are always in good hands <br> We accept many major insurance plan</p>
+        </div>
+
+
+    <div class="carousel-container">
+      <div class="carousel-inner" id="carousel">
         <img class="carousel-item" src="images/INS_1.png" alt="Image 1">
         <img class="carousel-item" src="images/INS_2.png" alt="Image 2">
         <img class="carousel-item" src="images/INS_3.png" alt="Image 1">
         <img class="carousel-item" src="images/INS_4.png" alt="Image 2">       
-         <img class="carousel-item1" src="images/INS_5.png" alt="Image 2">
         <img class="carousel-item" src="images/INS_6.png" alt="Image 2"><img class="carousel-item" src="images/INS_1.png" alt="Image 1">
         <img class="carousel-item" src="images/INS_2.png" alt="Image 2">
         <img class="carousel-item" src="images/INS_3.png" alt="Image 1">
         <img class="carousel-item" src="images/INS_4.webp" alt="Image 2">       
-         <img class="carousel-item" src="images/INS_5.png" alt="Image 2">
         <img class="carousel-item" src="images/INS_6.png" alt="Image 2"><img class="carousel-item" src="images/INS_1.png" alt="Image 1">
         <img class="carousel-item" src="images/INS_2.png" alt="Image 2">
         <img class="carousel-item" src="images/INS_3.png" alt="Image 1">
         <img class="carousel-item" src="images/INS_4.webp" alt="Image 2">       
-         <img class="carousel-item" src="images/INS_5.png" alt="Image 2">
         <img class="carousel-item" src="images/INS_6.png" alt="Image 2">
-       
 
         <!-- Add more images as needed -->
         <!-- Repeat images to ensure continuous scrolling -->
 
 
         <!-- Add more images as needed -->
+      </div>
     </div>
-</div>
 
 
 
-<div class="grouping">
-                     <p class="insurances"> Our clients are insured by the best in the industry. We accept many major insurance plans.</p> 
-                     <p class="meet"> Meet Our Team of Trusted Professionals</p> 
+    <div class="grouping" id="gro">
 
-                       <div class="containern">
-                        <!-- First profile -->
-                        <div class="profilen">
-                          <div class="imagen">
-                            <img src="images/Meta headshot relief .jpg" alt="Profile Image 2" style="width:100%; height:auto;">
-                          </div>
-                          <div class="textn">
-                            <div class="headern"><strong>Dr. Meta Galabe DNP-PMHNP</strong> </div>
-                            <div class="subtextn">Meta Galabe, DNP-PMHNP-BC, is a board-certified psychiatric nurse
-                                practitioner at Relief Behavioral Health LLC in Phoenix, Arizona.
-                                Practicing in healthcare for over 15 years. Dr. Meta received her
-                                Bachelor of Science in Nursing (BSN) from the University of Arizona,
-                                Tucson in 2008 and her Doctor in Nursing Practice degree (DNP) in
-                                2020. Her extensive nursing background includes geriatrics, hospice,
-                                behavioral health, substance use and addiction specialty.</div>
-                          </div>
-                        </div>
-                        <!-- Second profile (inverted) -->
-                        <div class="profilen reverse">
-                          <div class="imagen">
-                            <img src="images/Kegne headshot relief .jpg" alt="Profile Image 1" style="width:100%; height:auto;">
+      <p class="meet"> Meet Our Team of Trusted Professionals</p>
 
-                          </div>
-                          <div class="textn">
-                            <div class="headern1"><strong>Dr. Kengne Fosso DNP-PMHNP</strong></div>
-                            <div class="subtext">Dr. Kengne Fosso obtained her BSN degree at Grand
-                                Canyon University in 2012. She worked as a neuro-med
-                                surg- RN right after nursing school, then transitioned to
-                                mental health a year later. She worked as a psychiatric
-                                Registered Nurse for 7 years while completing her doctorate
-                                degree at the University of Arizona. Dr. Kengne Fosso
-                                obtained her doctoral degree from the University of Arizona
-                                in 2022. She was a member of the honors program. When
-                                she is not taking care of patients, she loves spending time
-                                with her family and friends. She is an active member of an
-                                African organization, and she loves planning events. She
-                                also enjoys traveling and visiting new places. She likes to
-                                experience new cultures and has been to 4 countries.</div>
-                          </div>
-                        </div>
-                      </div>
+      <div class="containern">
+        <!-- First profile -->
+        <div class="profilen">
+          <div class="imagen">
+            <img src="images/Meta headshot relief .jpg" alt="Profile Image 2" style="width:100%; height:auto;">
+          </div>
+          <div class="textn">
+            <div class="headern"><strong>Dr. Meta Galabe DNP-PMHNP</strong> </div>
+            <div class="subtextn">Meta Galabe, DNP-PMHNP-BC, is a board-certified psychiatric nurse
+              practitioner at Relief Behavioral Health LLC in Phoenix, Arizona.
+              Practicing in healthcare for over 15 years. Dr. Meta received her
+              Bachelor of Science in Nursing (BSN) from the University of Arizona,
+              Tucson in 2008 and her Doctor in Nursing Practice degree (DNP) in
+              2020. Her extensive nursing background includes geriatrics, hospice,
+              behavioral health, substance use and addiction specialty.</div>
+          </div>
+        </div>
+        <!-- Second profile (inverted) -->
+        <div class="profilen reverse">
+          <div class="imagen">
+            <img src="images/Kegne headshot relief .jpg" alt="Profile Image 1" style="width:100%; height:auto;">
 
-                      <div class="stuck">
-                      <p class="meet1"> Frequently Asked Questions</p>  
-                      <div class="qa-pair">
-                        <div class="question">
-                    <div class="question-text">What makes Embark different from other providers?</div> 
-                    <div class="arrow"></div>
-                        </div>
-                        <div class="answer">
-                            <p>What does confidentiality mean and how does this apply to me and my family?</p>
-                        </div>
-                    </div><div class="qa-pair">
-                        <div class="question">
-                            <div class="question-text">What does confidentiality mean and how does this apply to me and my family?</div>
-                            <div class="arrow"></div>
-                        </div>
-                        <div class="answer">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </div><div class="qa-pair">
-                        <div class="question">
-                            <div class="question-text">Will my health insurance plan cover the cost of treatment?</div>
-                            <div class="arrow"></div>
-                        </div>
-                        <div class="answer">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </div><div class="qa-pair">
-                        <div class="question">
-                            <div class="question-text">Can I pick the therapist I would like to work with myself?</div>
-                            <div class="arrow"></div>
-                        </div>
-                        <div class="answer">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </div>
-                    <div class="qa-pair">
-                        <div class="question">
-                            <div class="question-text">	What is the first step to explore treatment options?</div>
-                            <div class="arrow"></div>
-                        </div>
-                        <div class="answer">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </div>
-                    <div class="qa-pair">
-                        <div class="question">
-                            <div class="question-text">Do you see children, adolescents, adults, and geriatric patients in your practice?	</div>
-                            <div class="arrow"></div>
-                        </div>
-                        <div class="answer">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </div>
-                      </div>
-                    </div>    
-                    
-                    
-                   
+          </div>
+          <div class="textn">
+            <div class="headern1"><strong>Dr. Kengne Fosso DNP-PMHNP</strong></div>
+            <div class="subtext">Dr. Kengne Fosso obtained her BSN degree at Grand
+              Canyon University in 2012. She worked as a neuro-med
+              surg- RN right after nursing school, then transitioned to
+              mental health a year later. She worked as a psychiatric
+              Registered Nurse for 7 years while completing her doctorate
+              degree at the University of Arizona. Dr. Kengne Fosso
+              obtained her doctoral degree from the University of Arizona
+              in 2022. She was a member of the honors program. When
+              she is not taking care of patients, she loves spending time
+              with her family and friends.</div>
+          </div>
+        </div>
+      </div>
 
-                       <div class="beige2">
-                   <strong> <p class="whatis2">Reach out to us to get more information on becoming a new patient and what services we can provide for you</p>   </strong> 
-                   <div ><img class="leaf" src="images/icon.png" alt=""></div>
-                   <div class="gas">
-                    <p>Take The First Step</p>
-                </div>
-                <div id="contact">
-                    <div class="container">
-                        <div class="row">
-                            <div class="contact-left">
-                                <h1 class="sub-title">Contact Me</h1>
-              
-                                <div class="social-icons">
-                                    
-                                </div>
-                            </div>
-                            <div class="dontmove">
-                            <div class="contact-right">
-                                <form name="submit-to-google-sheet">
-                                    <input type="text" name="Name" placeholder="Your Name" required>
-                                    <input type="email" name="Email" placeholder="Your Email" required>
-                                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                                    <button type="submit" class="btn btn2">Submit</button>
-                                </form>
-                                <span id="msg"></span>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                  
-                </div>
-                
-                    </div>
-                    <div class="beige3">
-                    <div class="info">
-                        
-                       
-                        <div ><img class="fly" src="images/Stayfly.png" alt=""></div>
-                    
-                        </div>
-                        
-<div class="inform">
-    <form name="submit-to-google-sheet">
-        <strong> <p class="whatis3"> Address:  <br> <br> 4494 W. Peoria Ave. <br> #115A- Suite 4 <br> Glendale AZ 85302</p>   </strong> 
-        <strong> <p class="whatis4"> Tel: (480) 764-0508 <br> Email: reliefbehavioral@gmail.com</p>   </strong> 
-        <strong> <p class="whatis5"> 2024 Relief Behavioral Health. <br> All rights reserved.  </strong> 
-        
-    </form>
-    <span id="msg"></span>
-</div>
-                    </div>
-
-
-</div>
-
-
-
-
-
-    <script>
-        // JavaScript to toggle the answer when clicking on the question
-        const questionContainers = document.querySelectorAll('.qa-pair');
+      <div class="stuck" id="faq">
+        <p class="meet1"> Frequently Asked Questions</p>
+   
+     
+        <div class="qa-pair">
+          <div class="question">
+            <div class="question-text">Will my health insurance plan cover the cost of treatment?</div>
+            <div class="arrow"></div>
+          </div>
+          <div class="answer">
+            <p>Insurance coverage for treatment varies by plan. We recommend verifying your plan’s benefits and coverage details before your appointment.</p>
+          </div>
+        </div>
     
-        questionContainers.forEach((container) => {
-            const question = container.querySelector('.question');
-            const answer = container.querySelector('.answer');
+        <div class="qa-pair">
+          <div class="question">
+            <div class="question-text"> What is the first step to explore treatment options?</div>
+            <div class="arrow"></div>
+          </div>
+          <div class="answer">
+            <p>You can explore treatment options by requesting an appointment through email, our website, or by calling our office number.</p>
+          </div>
+        </div>
+        <div class="qa-pair">
+          <div class="question">
+            <div class="question-text">Do you see children, adolescents, adults, and geriatric patients in your
+              practice? </div>
+            <div class="arrow"></div>
+          </div>
+          <div class="answer">
+            <p>We see patients ages 11 and up, including adolescents, adults, and geriatric patients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="containerh" id="contac">
+        <div class="form-section">
+            <h1 class="final">Take The First Step</h1>
+            <p class="reach"> Reach out to us to get more information on becoming a new patient and what services we can provide for you</p>
+            <form action="#">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="image-section">
+            <img class= "four" src="images/icon.png" alt="Decorative Image">
+        </div>
+    </div>
     
-            question.addEventListener('click', () => {
-                if (answer.style.display === 'block') {
-                    answer.style.display = 'none';
-                    question.classList.remove('active');
-                } else {
-                    questionContainers.forEach((otherContainer) => {
-                        const otherAnswer = otherContainer.querySelector('.answer');
-                        otherAnswer.style.display = 'none';
-                        otherContainer.querySelector('.question').classList.remove('active');
-                    });
-    
-                    answer.style.display = 'block';
-                    question.classList.add('active');
-                }
-            });
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="logo-container">
+                <img src="images/Stayfly.png" alt="RBH Relief Behavioral Health Logo" class="footer-logo">
+            </div>
+            <div class="address-container">
+                <p>Address:</p>
+                <p>4494 W. Peoria Ave.<br>
+                #115A- Suite 4<br>
+                Glendale AZ 85302</p>
+            </div>
+            <div class="contact-container">
+                <p>Tel: (480) 764-0508<br>
+                Email: reliefbehavioral@gmail.com</p>
+            </div>
+            <div class="rights-container">
+                <p>2024 Relief Behavioral Health.<br>
+                All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+  </div>
+
+
+
+
+
+  <script>
+    // JavaScript to toggle the answer when clicking on the question
+    document.addEventListener("DOMContentLoaded", () => {
+        const menuToggle = document.getElementById("menu-toggle");
+        const navMenu = document.getElementById("nav-menu");
+
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
         });
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('.header');
-            const featureImg = document.querySelector('.feature-img');
-            const scrollPosition = window.scrollY;
+    });
+    const questionContainers = document.querySelectorAll('.qa-pair');
 
-            if (scrollPosition > 0) {
-                header.classList.add('sticky');
-                featureImg.style.marginTop = `${header.offsetHeight}px`;
-            } else {
-                header.classList.remove('sticky');
-                featureImg.style.marginTop = '80px'; // Adjust this value as needed
-            }
-        });
-       
+    questionContainers.forEach((container) => {
+      const question = container.querySelector('.question');
+      const answer = container.querySelector('.answer');
+
+      question.addEventListener('click', () => {
+        if (answer.style.display === 'block') {
+          answer.style.display = 'none';
+          question.classList.remove('active');
+        } else {
+          questionContainers.forEach((otherContainer) => {
+            const otherAnswer = otherContainer.querySelector('.answer');
+            otherAnswer.style.display = 'none';
+            otherContainer.querySelector('.question').classList.remove('active');
+          });
+
+          answer.style.display = 'block';
+          question.classList.add('active');
+        }
+      });
+    });
+    
 
 
 
 
 
 
-       
-        
+
+
+
     const items = ["Item 1", "Item 2", "Item 3", "Item 4"];
     let currentIndex = 0;
     let fadingOut = false;
 
     function updateArrows() {
-        const leftArrow = document.getElementById('leftArrow');
-        const rightArrow = document.getElementById('rightArrow');
+      const leftArrow = document.getElementById('leftArrow');
+      const rightArrow = document.getElementById('rightArrow');
 
-        leftArrow.classList.remove('bold');
-        leftArrow.classList.remove('faded');
-        rightArrow.classList.remove('bold');
-        rightArrow.classList.remove('faded');
+      leftArrow.classList.remove('bold');
+      leftArrow.classList.remove('faded');
+      rightArrow.classList.remove('bold');
+      rightArrow.classList.remove('faded');
 
-        if (currentIndex === 0) {
-            leftArrow.classList.add('faded');
-        } else if (currentIndex === items.length - 1) {
-            rightArrow.classList.add('faded');
-        } else {
-            leftArrow.classList.add('bold');
-            rightArrow.classList.add('bold');
-        }
+      if (currentIndex === 0) {
+        leftArrow.classList.add('faded');
+      } else if (currentIndex === items.length - 1) {
+        rightArrow.classList.add('faded');
+      } else {
+        leftArrow.classList.add('bold');
+        rightArrow.classList.add('bold');
+      }
     }
 
     function moveAndFade(direction) {
-        if (fadingOut) return; // Prevent moving and fading while animations are in progress
+      if (fadingOut) return; // Prevent moving and fading while animations are in progress
 
-        if (direction === 'left' && currentIndex > 0) {
-            currentIndex--;
-        } else if (direction === 'right' && currentIndex < items.length - 1) {
-            currentIndex++;
-        }
+      if (direction === 'left' && currentIndex > 0) {
+        currentIndex--;
+      } else if (direction === 'right' && currentIndex < items.length - 1) {
+        currentIndex++;
+      }
 
-        updateArrows();
-        fadeOutAllContainers();
+      updateArrows();
+      fadeOutAllContainers();
     }
 
     function fadeOutAllContainers(reverse = false) {
-        const containers = document.querySelectorAll('.black, .black1, .black2');
-        let delay = 0;
+      const containers = document.querySelectorAll('.black, .black1, .black2');
+      let delay = 0;
 
-        fadingOut = true; // Set the flag to indicate fading out is in progress
+      fadingOut = true; // Set the flag to indicate fading out is in progress
 
-        if (reverse) {
-            for (let i = containers.length - 1; i >= 0; i--) {
-                setTimeout(() => {
-                    containers[i].classList.add('fade-out');
-                    // Show the red box when the last container fades out
-                    if (i === containers.length - 1) {
-                        showRedBox();
-                    }
-                    // After fading out the last container, fade in all containers
-                    if (i === 0) {
-                        setTimeout(() => {
-                            containers.forEach((container) => {
-                                container.classList.remove('fade-out');
-                            });
-                            fadingOut = false; // Reset the flag after fading in
-                        }, 500); // Adjust this time as needed for the red box to be visible
-                    }
-                }, delay);
-                delay += 300; // Increase the delay for reverse fading
+      if (reverse) {
+        for (let i = containers.length - 1; i >= 0; i--) {
+          setTimeout(() => {
+            containers[i].classList.add('fade-out');
+            // Show the red box when the last container fades out
+            if (i === containers.length - 1) {
+              showRedBox();
             }
-        } else {
-            for (let i = 0; i < containers.length; i++) {
-                setTimeout(() => {
-                    containers[i].classList.add('fade-out');
-                    // Show the red box when the last container fades out
-                    if (i === containers.length - 1) {
-                        showRedBox();
-                    }
-                    // After fading out the last container, fade in all containers
-                    if (i === containers.length - 1) {
-                        setTimeout(() => {
-                            containers.forEach((container) => {
-                                container.classList.remove('fade-out');
-                            });
-                            fadingOut = false; // Reset the flag after fading in
-                        }, 500); // Adjust this time as needed for the red box to be visible
-                    }
-                }, delay);
-                delay += 300; // Increase the delay for fading
+            // After fading out the last container, fade in all containers
+            if (i === 0) {
+              setTimeout(() => {
+                containers.forEach((container) => {
+                  container.classList.remove('fade-out');
+                });
+                fadingOut = false; // Reset the flag after fading in
+              }, 500); // Adjust this time as needed for the red box to be visible
             }
+          }, delay);
+          delay += 300; // Increase the delay for reverse fading
         }
+      } else {
+        for (let i = 0; i < containers.length; i++) {
+          setTimeout(() => {
+            containers[i].classList.add('fade-out');
+            // Show the red box when the last container fades out
+            if (i === containers.length - 1) {
+              showRedBox();
+            }
+            // After fading out the last container, fade in all containers
+            if (i === containers.length - 1) {
+              setTimeout(() => {
+                containers.forEach((container) => {
+                  container.classList.remove('fade-out');
+                });
+                fadingOut = false; // Reset the flag after fading in
+              }, 500); // Adjust this time as needed for the red box to be visible
+            }
+          }, delay);
+          delay += 300; // Increase the delay for fading
+        }
+      }
     }
 
     function showRedBox() {
-    const redBox = document.querySelector('.red-box');
-    redBox.style.display = 'block';
-}
+      const redBox = document.querySelector('.red-box');
+      redBox.style.display = 'block';
+    }
 
     updateArrows();
 
 
-    </script>
+  </script>
 
-<script>
+  <script>
 
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
     }
 
-</script>
+  </script>
 
-<script>
+  <script>
 
     var sidemeu = document.getElementById("sidemenu");
 
-    function openmenu(){
-        sidemeu.style.right = "0";
+    function openmenu() {
+      sidemeu.style.right = "0";
     }
-    function closemenu(){
-        sidemeu.style.right = "-200px";
+    function closemenu() {
+      sidemeu.style.right = "-200px";
     }
 
-</script>
-<script>
+  </script>
+  <script>
     // JavaScript to toggle the answer when clicking on the question
-     // JavaScript to toggle the answer when clicking on the question
-     const questionContainers = document.querySelectorAll('.qa-pair');
+    // JavaScript to toggle the answer when clicking on the question
+    const questionContainers = document.querySelectorAll('.qa-pair');
 
-questionContainers.forEach((container) => {
-    const question = container.querySelector('.question');
-    const answer = container.querySelector('.answer');
+    questionContainers.forEach((container) => {
+      const question = container.querySelector('.question');
+      const answer = container.querySelector('.answer');
 
-    question.addEventListener('click', () => {
+      question.addEventListener('click', () => {
         if (answer.style.maxHeight) {
-            // If maxHeight is set, collapse the answer
-            answer.style.maxHeight = null;
-            question.classList.remove('active');
+          // If maxHeight is set, collapse the answer
+          answer.style.maxHeight = null;
+          question.classList.remove('active');
         } else {
-            // Expand the answer
-            questionContainers.forEach((otherContainer) => {
-                const otherAnswer = otherContainer.querySelector('.answer');
-                otherAnswer.style.maxHeight = null;
-                otherContainer.querySelector('.question').classList.remove('active');
-            });
+          // Expand the answer
+          questionContainers.forEach((otherContainer) => {
+            const otherAnswer = otherContainer.querySelector('.answer');
+            otherAnswer.style.maxHeight = null;
+            otherContainer.querySelector('.question').classList.remove('active');
+          });
 
-            answer.style.maxHeight = answer.scrollHeight + 'px';
-            question.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          question.classList.add('active');
         }
+      });
     });
-});
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxRJP1NKzsivqTr22naFZSetv0HosRN6KSnrd-RsiSnBapJB173tH8XMjb1PVedQ57uTw/exec' // add your own app script link here
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
-  
+
     form.addEventListener('submit', e => {
       e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      fetch(scriptURL, {method: 'POST', body: new FormData(form)})
         .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
         })
         .catch(error => console.error('Error!', error.message))
     })
-    
- 
+
+
   </script>
 
-<script>
+  <script>
 
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
     }
     const carousel = document.getElementById('carousel');
-        let offset = 0;
-        const shiftImage = () => {
-            offset -= 600; // Shift by the width of the image
-            carousel.style.transform = `translateX(${offset}px)`;
-            
-            // Check if the first element is completely out of view
-            if (-offset >= 600) {
-                carousel.appendChild(carousel.firstElementChild); // Move first to last
-                offset += 600; // Reset offset by the width of one image
-                carousel.style.transform = `translateX(${offset}px)`; // Apply new offset without transition
-            }
-        };
-        setInterval(shiftImage, 1244000); // Change images every 2 seconds
-</script>
+    let offset = 0;
+    const shiftImage = () => {
+      offset -= 600; // Shift by the width of the image
+      carousel.style.transform = `translateX(${offset}px)`;
 
-<script>
+      // Check if the first element is completely out of view
+      if (-offset >= 600) {
+        carousel.appendChild(carousel.firstElementChild); // Move first to last
+        offset += 600; // Reset offset by the width of one image
+        carousel.style.transform = `translateX(${offset}px)`; // Apply new offset without transition
+      }
+    };
+    setInterval(shiftImage, 1244000); // Change images every 2 seconds
+  </script>
+
+  <script>
 
     var sidemeu = document.getElementById("sidemenu");
 
-    function openmenu(){
-        sidemeu.style.right = "0";
+    function openmenu() {
+      sidemeu.style.right = "0";
     }
-    function closemenu(){
-        sidemeu.style.right = "-200px";
+    function closemenu() {
+      sidemeu.style.right = "-200px";
     }
 
-</script>
-<script>
+  </script>
+  <script>
     // JavaScript to toggle the answer when clicking on the question
-     // JavaScript to toggle the answer when clicking on the question
-     const questionContainers = document.querySelectorAll('.qa-pair');
+    // JavaScript to toggle the answer when clicking on the question
+    const questionContainers = document.querySelectorAll('.qa-pair');
 
-questionContainers.forEach((container) => {
-    const question = container.querySelector('.question');
-    const answer = container.querySelector('.answer');
+    questionContainers.forEach((container) => {
+      const question = container.querySelector('.question');
+      const answer = container.querySelector('.answer');
 
-    question.addEventListener('click', () => {
+      question.addEventListener('click', () => {
         if (answer.style.maxHeight) {
-            // If maxHeight is set, collapse the answer
-            answer.style.maxHeight = null;
-            question.classList.remove('active');
+          // If maxHeight is set, collapse the answer
+          answer.style.maxHeight = null;
+          question.classList.remove('active');
         } else {
-            // Expand the answer
-            questionContainers.forEach((otherContainer) => {
-                const otherAnswer = otherContainer.querySelector('.answer');
-                otherAnswer.style.maxHeight = null;
-                otherContainer.querySelector('.question').classList.remove('active');
-            });
+          // Expand the answer
+          questionContainers.forEach((otherContainer) => {
+            const otherAnswer = otherContainer.querySelector('.answer');
+            otherAnswer.style.maxHeight = null;
+            otherContainer.querySelector('.question').classList.remove('active');
+          });
 
-            answer.style.maxHeight = answer.scrollHeight + 'px';
-            question.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          question.classList.add('active');
         }
+      });
     });
-});
 
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxRJP1NKzsivqTr22naFZSetv0HosRN6KSnrd-RsiSnBapJB173tH8XMjb1PVedQ57uTw/exec' // add your own app script link here
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
-  
+
     form.addEventListener('submit', e => {
       e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      fetch(scriptURL, {method: 'POST', body: new FormData(form)})
         .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
         })
         .catch(error => console.error('Error!', error.message))
     })
-    
+
   </script>
 </body>
+
 </html>
-
-
-
